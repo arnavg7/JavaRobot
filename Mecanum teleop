@@ -315,7 +315,7 @@ public class Teleop extends LinearOpMode {
         }
 
         //Strafe Bottom-Left & Copy of Strafe Top-Right
-        if (gamepad1.right_stick_x!=0 && gamepad1.right_stick_y<0.3 && gamepad1.right_stick_y>0.3) {
+        if (gamepad1.right_stick_x!=0 && gamepad1.right_stick_y<-0.3 && gamepad1.right_stick_y>-0.3) {
             frontLeft.setPower(-gamepad1.right_stick_x);
             rearLeft.setPower(0);
             frontRight.setPower(0);
